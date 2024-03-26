@@ -51,6 +51,7 @@ input::-webkit-inner-spin-button {
 }
 
 
+/*
 button {
     background-color: blue;
     border: none;
@@ -60,7 +61,7 @@ button {
     transition: .3s all;
     margin: 20px 0;
     cursor: pointer;
-}
+}*/
 
 button:hover {
     filter: brightness(1.3);

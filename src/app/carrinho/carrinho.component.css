@@ -16,11 +16,7 @@ li {
     justify-content: space-between;
 }
 
-img {
-    width: 100px;
-    height: 100px;
-    display: block;
-}
+
 
 .remove-button {
     background-color: red;
@@ -59,4 +55,11 @@ input {
 
 .buy-button:hover {
     filter: brightness(0.9);
+}
+
+
+img {
+    width: 100px;
+    height: 100px;
+    display: block;
 }

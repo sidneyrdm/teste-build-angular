@@ -1,6 +1,6 @@
-<form class="search-form" (ngSubmit)="pesquisar()">
-    <input type="text" name="descricao" [(ngModel)]="descricao">
-    <button type="submit">
-        Pesquisar<i class="fa-solid fa-magnifying-glass"></i>
+<form class="input-group" (ngSubmit)="pesquisar()">
+    <input type="text" name="descricao" [(ngModel)]="descricao" class="form-control">
+    <button type="submit" class="btn btn-primary">
+        Pesquisar
     </button>
 </form>
