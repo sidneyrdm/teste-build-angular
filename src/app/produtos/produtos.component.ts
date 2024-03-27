@@ -18,19 +18,19 @@ export class ProdutosComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    const produtos = this.produtoService.getAll();
+
+    const todosProdutos = this.produtoService.getAll();
 
     this.route.queryParamMap.subscribe(params => {
-      const descricao = params.get('descricao')?.toLocaleLowerCase();
-
+      const descricao = params.get('descricao')?.toLowerCase();
+      
       if(descricao){
-        this.produtos = produtos.filter(produto => {
-          produto.descricao.toLocaleLowerCase().includes(descricao);
-        })
+
+        this.produtos = todosProdutos.filter(produto => produto.descricao.toLowerCase().includes(descricao))
         return;
       }
 
-      this.produtos = produtos;
+      this.produtos = todosProdutos;
     })
   }
 

@@ -1,7 +1,7 @@
 <h2 class="contact__title">Entre em contato</h2>
 <section class="contact__container">
     <form (ngSubmit)="enviarFormulario()" class="contact-form" [formGroup]="formContato">
-        
+
         <input type="text" placeholder="Digite o seu nome" formControlName="nome"
             [class.valid]="formContato.controls['nome'].valid"
             [class.invalid]="formContato.controls['nome'].invalid && (formContato.controls['nome'].touched || formContato.controls['nome'].dirty)">
@@ -12,13 +12,12 @@
             <small class="error-message" *ngIf="formContato.controls['nome'].hasError('required')">
                 Esse campo precisa ser preenchido.</small>
         </div>
-        
-        
-        <input type="assunto" placeholder="Digite o assunto"
-        formControlName="assunto" 
-        [class.valid]="formContato.controls['assunto'].valid"
-        [class.invalid]="formContato.controls['assunto'].invalid && (formContato.controls['assunto'].touched || formContato.controls['assunto'].dirty)">
-        
+
+
+        <input type="assunto" placeholder="Digite o assunto" formControlName="assunto"
+            [class.valid]="formContato.controls['assunto'].valid"
+            [class.invalid]="formContato.controls['assunto'].invalid && (formContato.controls['assunto'].touched || formContato.controls['assunto'].dirty)">
+
         <div
             *ngIf="formContato.controls['assunto'].invalid && (formContato.controls['assunto'].touched || formContato.controls['assunto'].dirty)">
             <small class="error-message" *ngIf="formContato.controls['assunto'].hasError('minlength')">
@@ -26,11 +25,10 @@
             <small class="error-message" *ngIf="formContato.controls['assunto'].hasError('required')">
                 Esse campo precisa ser preenchido.</small>
         </div>
-        
-        <input type="tel" placeholder="(00) 0 0000-0000"
-        formControlName="telefone" 
-        [class.valid]="formContato.controls['telefone'].valid"
-        [class.invalid]="formContato.controls['telefone'].invalid && (formContato.controls['telefone'].touched || formContato.controls['telefone'].dirty)">
+
+        <input type="tel" placeholder="(00) 0 0000-0000" formControlName="telefone"
+            [class.valid]="formContato.controls['telefone'].valid"
+            [class.invalid]="formContato.controls['telefone'].invalid && (formContato.controls['telefone'].touched || formContato.controls['telefone'].dirty)">
         <div
             *ngIf="formContato.controls['telefone'].invalid && (formContato.controls['telefone'].touched || formContato.controls['telefone'].dirty)">
             <small class="error-message" *ngIf="formContato.controls['telefone'].hasError('minlength')">
@@ -38,10 +36,9 @@
             <small class="error-message" *ngIf="formContato.controls['telefone'].hasError('required')">
                 Esse campo precisa ser preenchido.</small>
         </div>
-        <input type="email" placeholder="Digite o seu email"
-        formControlName="email"
-        [class.valid]="formContato.controls['email'].valid"
-        [class.invalid]="formContato.controls['email'].invalid && (formContato.controls['email'].touched || formContato.controls['email'].dirty)">
+        <input type="email" placeholder="Digite o seu email" formControlName="email"
+            [class.valid]="formContato.controls['email'].valid"
+            [class.invalid]="formContato.controls['email'].invalid && (formContato.controls['email'].touched || formContato.controls['email'].dirty)">
         <div
             *ngIf="formContato.controls['email'].invalid && (formContato.controls['email'].touched || formContato.controls['email'].dirty)">
             <small class="error-message" *ngIf="formContato.controls['email'].hasError('email')">
@@ -49,11 +46,9 @@
             <small class="error-message" *ngIf="formContato.controls['email'].hasError('required')">
                 Esse campo precisa ser preenchido.</small>
         </div>
-        <textarea maxlength="300" placeholder="Digite a sua mensagem..."
-        formControlName="mensagem"
-        [class.valid]="formContato.controls['mensagem'].valid"
-        [class.invalid]="formContato.controls['mensagem'].invalid && (formContato.controls['mensagem'].touched || formContato.controls['mensagem'].dirty)"
-        ></textarea>
+        <textarea maxlength="300" placeholder="Digite a sua mensagem..." formControlName="mensagem"
+            [class.valid]="formContato.controls['mensagem'].valid"
+            [class.invalid]="formContato.controls['mensagem'].invalid && (formContato.controls['mensagem'].touched || formContato.controls['mensagem'].dirty)"></textarea>
         <div
             *ngIf="formContato.controls['mensagem'].invalid && (formContato.controls['mensagem'].touched || formContato.controls['mensagem'].dirty)">
             <small class="error-message" *ngIf="formContato.controls['mensagem'].hasError('minlength')">
@@ -65,7 +60,7 @@
     </form>
     <address>
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14230.300361031366!2d-49.0703074!3d-26.9169772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df18c3b4a71d65%3A0xa5ec9dd8406a6a7!2sProWay!5e0!3m2!1spt-BR!2sbr!4v1711418079017!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.724602367924!2d-34.9395447!3d-8.0830002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1ebb4b7a4a71%3A0x64e0e4a6d602f8c1!2sSupermercado%20Rende%20Mais!5e0!3m2!1spt-BR!2sbr!4v1711499190672!5m2!1spt-BR!2sbr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </address>
