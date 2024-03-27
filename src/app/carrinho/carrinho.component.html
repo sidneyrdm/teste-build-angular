@@ -16,7 +16,7 @@
 
     <div class="input-group">
         <div class="input-goup-btn col-md-2">
-            <h2 class="btn btn-primary">Total.: {{ total }}</h2>
+            <h2 class="btn btn-primary">Total.: {{ total | currency: 'BRL'}}</h2>
             <button class="btn btn-success" (click)="comprar()">Comprar do carrinho</button>
         </div>
     </div>
