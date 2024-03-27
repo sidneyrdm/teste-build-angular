@@ -17,10 +17,11 @@
     font-size:60px;
 }
 
-.main-header__title--orange {
-    color: orange;
-    color: orange;
-    font-size:60px;
+.main-header__title--green {
+    color: green;
+    color: greenyellow;
+    font-size:30px;
+    font: bold solid;
 }
 
 .main-header__menu ul {
